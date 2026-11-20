@@ -28,9 +28,9 @@ Analysis of the email header and body confirms that this email was NOT sent from
 
 Key Findings:
 
-1. Spoofing: The attacker forged the sender name (From) to appear as an official bank.
-2. Attacker Infrastructure: Based on the Return-Path and Message-ID headers, this email was sent from a cheap VPS server named ubuntu-s-1vcpu... (likely rented from a cloud provider such as DigitalOcean).
-3. Authentication Failure: The receiving system failed to verify the sender server's identity (SPF/DMARC Error), which is a strong indicator that this email is forged.
+. Spoofing: The attacker forged the sender name (From) to appear as an official bank.
+. Attacker Infrastructure: Based on the Return-Path and Message-ID headers, this email was sent from a cheap VPS server named ubuntu-s-1vcpu... (likely rented from a cloud provider such as DigitalOcean).
+. Authentication Failure: The receiving system failed to verify the sender server's identity (SPF/DMARC Error), which is a strong indicator that this email is forged.
 
 ---
 
@@ -56,10 +56,10 @@ This is a list of "evidence" that must be blocked by the IT/Network team:
 
 5. Recommendations & Mitigation
 
-1. Block URL: Add the domain blog1seguimentmydomaine2bra.me to the company's firewall/proxy blocklist.
-2. Delete Email: Remove the email from the user's inbox.
-3. Education: Provide reminders to employees not to panic easily when receiving emails about "expiring points" or "huge discounts".
-4. Follow-up Check: If the victim has already clicked and entered their data, immediately perform a Password Reset and enable MFA.
+. Block URL: Add the domain blog1seguimentmydomaine2bra.me to the company's firewall/proxy blocklist.
+. Delete Email: Remove the email from the user's inbox.
+. Education: Provide reminders to employees not to panic easily when receiving emails about "expiring points" or "huge discounts".
+. Follow-up Check: If the victim has already clicked and entered their data, immediately perform a Password Reset and enable MFA.
 
 ---
 
