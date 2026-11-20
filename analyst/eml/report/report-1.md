@@ -10,7 +10,7 @@ Status : Confirmed Phishing / Malicious
 
 ---
 
-1. Executive Summary
+**1. Executive Summary**
 
 A suspicious incoming email was identified employing a phishing scam, impersonating Banco do Bradesco (Livelo), a major bank from Brazil. The email utilizes social engineering tactics to lure the victim into clicking a link that redirects to a fake website.
 
@@ -18,7 +18,7 @@ Analysis of the email header and body confirms that this email was NOT sent from
 
 ---
 
-2. Header Analysis (Email Metadata)
+**2. Header Analysis (Email Metadata)**
 
 · Subject: CLIENTE PRIME - BRADESCO LIVELO: Seu cartão...
 · From (Display Name): BANCO DO BRADESCO LIVELO <banco.bradesco@atendimento.com.br>
@@ -34,7 +34,7 @@ Key Findings:
 
 ---
 
-3. Email Body Analysis (Body & Payload)
+**3. Email Body Analysis (Body & Payload)**
 
 · Obfuscation Technique: The email body is encoded using Base64 to bypass spam filters (Anti-Spam Gateway).
 · Social Engineering (Manipulation Tactics):
@@ -44,7 +44,7 @@ Key Findings:
 
 ---
 
-4. Indicators of Compromise (IoCs)
+**4. Indicators of Compromise (IoCs)**
 
 This is a list of "evidence" that must be blocked by the IT/Network team:
 
@@ -54,7 +54,7 @@ This is a list of "evidence" that must be blocked by the IT/Network team:
 
 ---
 
-5. Recommendations & Mitigation
+**5. Recommendations & Mitigation**
 
 . Block URL: Add the domain blog1seguimentmydomaine2bra.me to the company's firewall/proxy blocklist.
 . Delete Email: Remove the email from the user's inbox.
@@ -63,16 +63,16 @@ This is a list of "evidence" that must be blocked by the IT/Network team:
 
 ---
 
-6. Evidence / Appendices
+**6. Evidence / Appendices**
 
-**A. Email Header Analysis (Spoofing & Authentication Failure)**
+A. Email Header Analysis (Spoofing & Authentication Failure)
 ![Header Analysis](./evidence/sample-1/header-analysis.png)
 
 *Analysis Notes:*
 *   **Authentication Failure (Top Highlight):** The SPF and DMARC results returned `temperror` and `fail`. This indicates the receiving server could not verify if the email was sent from an authorized Bradesco server. It also clearly shows a mismatch between the display name (`atendimento.com.br`) and the actual sending address (`ubuntu-s-1vcpu...`).
 *   **Suspicious Origin (Bottom Highlight):** This email *should* have originated from the bank's official mail server. However, the header proves it was actually sent from a low-cost Virtual Private Server (VPS) named `ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06`. A legitimate bank would never use a cheap VPS for official communication.
 
-**B. Base64 Decoded Payload (Social Engineering & Malicious URL)**
+B. Base64 Decoded Payload (Social Engineering & Malicious URL)
 ![Decoded Payload](./evidence/sample-1/payload-decoded.png)
 
 *Analysis Notes:*
