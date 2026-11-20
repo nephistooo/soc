@@ -1,12 +1,12 @@
 EMAIL PHISHING ANALYSIS REPORT (TICKET: INC-2026-001)
 
-Analyst : Andra,
+Analyst : Andra
 
-Investigation Date : 20 November 2026,
+Investigation Date : 20 November 2026
 
-Sample File : sample-1.eml,
+Sample File : sample-1.eml
 
-Status : Confirmed Phishing / Malicious,
+Status : Confirmed Phishing / Malicious
 
 ---
 
