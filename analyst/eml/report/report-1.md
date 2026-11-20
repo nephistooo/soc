@@ -65,14 +65,21 @@ This is a list of "evidence" that must be blocked by the IT/Network team:
 
 6. Evidence / Appendices
 
-A. Email Header Analysis (SPF/DMARC Fail)
-evidence/header_fail.png
+**A. Email Header Analysis (Spoofing & Authentication Failure)**
+![Header Analysis](./evidence/sample-1/header-analysis.png)
 
-B. Base64 Decoded Payload
-evidence/decoded_body.png
+*Analysis Notes:*
+*   **Authentication Failure (Top Highlight):** The SPF and DMARC results returned `temperror` and `fail`. This indicates the receiving server could not verify if the email was sent from an authorized Bradesco server. It also clearly shows a mismatch between the display name (`atendimento.com.br`) and the actual sending address (`ubuntu-s-1vcpu...`).
+*   **Suspicious Origin (Bottom Highlight):** This email *should* have originated from the bank's official mail server. However, the header proves it was actually sent from a low-cost Virtual Private Server (VPS) named `ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06`. A legitimate bank would never use a cheap VPS for official communication.
 
-C. Malicious URL Discovery
-evidence/malicious_url.png
+**B. Base64 Decoded Payload (Social Engineering & Malicious URL)**
+![Decoded Payload](./evidence/sample-1/payload-decoded.png)
+
+*Analysis Notes:*
+*   **Obfuscation Bypass:** The attacker encoded the email body in Base64 to evade standard text-based spam filters.
+*   **Social Engineering Tactics:** The decoded payload reveals classic manipulation techniques. It creates a false sense of urgency by claiming the victim has `92,990` points expiring *today* ("EXPIRAM HOJE"). It also offers a fake "35% discount" as a reward.
+*   **Malicious URL:** The "Resgatar Agora" (Redeem Now) button is hardcoded to redirect victims to `blog1seguimentmydomaine2bra[.]me`. 
+*   **Threat Intel Correlation:** The link is currently marked as `(inactive/offline)`. This explains why automated tools like VirusTotal returned 0 detections—the phishing infrastructure has likely been taken down or moved. This highlights the importance of manual header/payload analysis over relying solely on automated scanners.
 
 ---
 
