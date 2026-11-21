@@ -1,6 +1,7 @@
----
 
 EMAIL PHISHING ANALYSIS REPORT (TICKET: INC-2026-000)
+
+---
 
 Analyst: Andra
 Investigation Date: 21 November 2026
@@ -20,16 +21,18 @@ The attacker bypassed basic authentication checks by abusing a seemingly legitim
 **2. Header Analysis (Email Metadata)**
 
 · Subject: Erkennt alle Radarbänder X K Ka und KI
-· From (Display Name): Speeder Pro Radar <alert.fujyd@naturespaints.com>
-· Return-Path: alert.ktzem@naturespaints.com
+· From (Display Name): Speeder Pro Radar *<alert.fujyd@naturespaints.com>*
+· Return-Path: *alert.ktzem@naturespaints.com*
 · Sender IP: 52.142.184.119 (Hosting Provider Infrastructure)
 · Authentication Results: spf=pass, dkim=pass, dmarc=bestguesspass
 
+---
+
 *Key Findings:*
 
-. Domain Reputation Abuse: The attacker did not use a cheap VPS. They sent from naturespaints.com, which likely has an establishe reputation (or was compromised) to successfully pass SPF/DMARC checks and bypass spam filters.
+. Domain Reputation Abuse: The attacker did not use a cheap VPS. They sent from *naturespaints.com*, which likely has an establishe reputation (or was compromised) to successfully pass SPF/DMARC checks and bypass spam filters.
 
-. Authentication Mismatch (Spoofing Indicator): Although the SPF shows pass, there is a glaring mismatch. The header.from is naturespaints.com, but the DKIM signature (header.d) resolves to suntlzynb.aeronovahq.co.uk. This proves the email is being relayed through a different infrastructure than it claims.
+. Authentication Mismatch (Spoofing Indicator): Although the SPF shows pass, there is a glaring mismatch. The header.from is naturespaints.com, but the DKIM signature (header.d) resolves to *suntlzynb.aeronovahq.co.uk*. This proves the email is being relayed through a different infrastructure than it claims.
 
 ---
 
@@ -39,11 +42,13 @@ The attacker bypassed basic authentication checks by abusing a seemingly legitim
 
 · Language & Social Engineering: The payload uses German text ("Zeitlich begrenztes Angebot 75% Rabatt auf Speeder Pro"), translating to "Limited time offer 75% discount on Speeder Pro". This utilizes False Urgency and Greed (Bait) tactics.
 
+---
+
 *· Evasion Techniques:*
 
-  · Wildcard DNS & Randomized Subdomains: The attacker uses multiple randomized subdomains (e.g., oppvfoab.172-202-98-170.cloud-xip.com, kjujzwne...) pointing to the same IP to bypass URL blocklists. The first link uses the raw IP as a subdomain (172-202-98-170...) as a fallback.
+  · Wildcard DNS & Randomized Subdomains: The attacker uses multiple randomized subdomains (e.g., *oppvfoab.172-202-98-170.cloud-xip.com*, *kjujzwne...*) pointing to the same IP to bypass URL blocklists. The first link uses the raw IP as a subdomain (172-202-98-170...) as a fallback.
 
-  · Trust Abuse (Imgur): Malicious payload images are hosted on i.imgur.com to bypass image security filters.
+  · Trust Abuse (Imgur): Malicious payload images are hosted on *i.imgur.com* to bypass image security filters.
 
 *· Tracking & Analytics Mechanism:*
 
