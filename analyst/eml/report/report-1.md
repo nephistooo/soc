@@ -24,7 +24,7 @@ Analysis of the email header and body confirms that this email was NOT sent from
 
 · Subject: CLIENTE PRIME - BRADESCO LIVELO: Seu cartão...
 
-· From (Display Name): BANCO DO BRADESCO LIVELO <banco.bradesco@atendimento.com.br>
+· From (Display Name): BANCO DO BRADESCO LIVELO *<banco.bradesco@atendimento.com.br>*
 
 · Return-Path (Original): root@ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06...
 
@@ -59,7 +59,7 @@ Key Findings:
 
 This is a list of "evidence" that must be blocked by the IT/Network team:
 
-· Malicious URL: hxxps://blog1seguimentmydomaine2bra[.]me/ (Defanged).
+· Malicious URL: *hxxps://blog1seguimentmydomaine2bra[.]me/* (Defanged).
 
 · Sender Infrastructure: ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06 (VPS Server).
 
@@ -69,7 +69,7 @@ This is a list of "evidence" that must be blocked by the IT/Network team:
 
 **5. Recommendations & Mitigation**
 
-. Block URL: Add the domain blog1seguimentmydomaine2bra.me to the company's firewall/proxy blocklist.
+. Block URL: Add the domain *blog1seguimentmydomaine2bra.me* to the company's firewall/proxy blocklist.
 
 . Delete Email: Remove the email from the user's inbox.
 
