@@ -90,11 +90,11 @@ hxxp://172-202-98-170.cloud-xip[.]com/4KYY...
 
 A. Email Header Analysis (SPF Pass but Domain Mismatch)
 Description: Shows SPF pass, but reveals the mismatch between the sender domain (naturespaints.com) and the DKIM domain (aeronovahq.co.uk). Also highlights the Sender: header which exposes the true relay address.
-(./evidence/sample-0/header-analysis.png)
+![Header Analysis](./evidence/sample-0/header-analysis.png)
 
 B. Raw HTML Payload (7bit Encoding - Multiple Randomized URLs & Tracking Pixel)
 Description: Highlights the German bait text, the three distinct randomized subdomains pointing to the same IP, and the hidden 1x1 tracking pixel at the bottom.
-(./evidence/sample-0/payload-decoded.png)
+![Payload Decoded](./evidence/sample-0/payload-decoded.png)
 
 ---
 
