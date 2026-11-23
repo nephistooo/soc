@@ -1,4 +1,4 @@
-##📧 Email Phishing Analysis Report
+## 📧 Email Phishing Analysis Report
 
 Ticket ID: INC-2026-003 
 
@@ -14,13 +14,13 @@ Status: 🔴 Confirmed Phishing / High Severity
 
 ---
 
-##1. Executive Summary
+## 1. Executive Summary
 
 A suspicious email was identified impersonating OKX, a well-known cryptocurrency exchange platform. Unlike traditional phishing campaigns that direct victims to fake login pages, this campaign utilizes a Malicious Browser Extension Distribution tactic.
 
 The attacker lures victims with a fake "Web3 Extension" promotion, directing them to a legitimate Google Chrome Web Store link. However, the linked extension is a malicious clone designed to compromise the victim's crypto wallets or browser data.
 
-##2. Header Analysis (Email Metadata)
+## 2. Header Analysis (Email Metadata)
 
 Subject: [Encoded] OKX Web3 Extension - Advanced Chrome Extension for Web3. 
 
@@ -32,7 +32,7 @@ Sender IP: 180.168.61.82
 
 Authentication Results: spf=none, dkim=fail, dmarc=none
 
-Key Findings:
+ **Key Findings:**
 
 · Identity Obfuscation: The attacker encoded the Sender Name in Base64 to bypass basic text filters.
 
@@ -47,15 +47,15 @@ List-Unsubscribe: <https://chromewebstore.google.com/...>
 Authentication-Results: spf=none; dkim=fail; dmarc=none
 ```
 
-##3. Email Body Analysis (Body & Payload)
+## 3. Email Body Analysis (Body & Payload)
 
-A. Social Engineering Tactics:
+**A. Social Engineering Tactics:**
 
 · Authority & FOMO: Uses the famous "OKX" brand and promises exclusive access to "Decentralized Finance Technology" to lure crypto enthusiasts.
 
 · Fake Legitimacy: Claims to have "Over 10 million users" and a "4.7/5 Rating" to build trust.
 
-B. The Payload (Malicious Link):
+**B. The Payload (Malicious Link):**
 
 · The attacker does not host a phishing page. Instead, they redirect victims to a real Chrome Web Store URL: 
 
@@ -65,7 +65,7 @@ hxxps://chromewebstore.google[.]com/detail/okx-wallet-dashboard/inophbikolocipig
 
 · The extension ID (inophbikolocipigmkhlfkdkkiccjgpgh) is a malicious clone. Once installed, it can steal browser cookies, passwords, or cryptocurrency seed phrases.
 
-##4. Indicators of Compromise (IoCs)
+## 4. Indicators of Compromise (IoCs)
 
 Malicious Extension ID: inophbikolocipigmkhlfkdkkiccjgpgh 
 
@@ -75,7 +75,7 @@ Abused Domains: handpay.com.cn, dev.roombird.ru
 
 Encoded Sender Identity: T0tYIEV4dGVuc2lvbg== (OKX Extension)
 
-##5. Recommendations & Mitigation
+## 5. Recommendations & Mitigation
 
 · Block Domains & IPs: Block emails originating from handpay.com.cn and add the Sender IP to the firewall blocklist.
 
@@ -85,22 +85,22 @@ Encoded Sender Identity: T0tYIEV4dGVuc2lvbg== (OKX Extension)
 
 · Endpoint Check: Scan the endpoints of any users who might have clicked the link to ensure no malicious extensions were installed.
 
-##6. Evidence / Appendices
+## 6. Evidence / Appendices
 
-A. Email Header Analysis (Auth Fail & Header Spoofing)
+**A. Email Header Analysis (Auth Fail & Header Spoofing)**
 Shows the complete failure of SPF, DKIM, and DMARC, alongside the Base64 encoded sender name and the deceptive List-Unsubscribe header.
 ![Email header analysis](./evidence/sample-2/header-analysis.png)
 
-B. Decoded Email Body (Social Engineering & Malicious Link)
+**B. Decoded Email Body (Social Engineering & Malicious Link)**
 The decoded plaintext reveals the marketing-style bait and the single malicious Chrome Web Store link.
 ![Email body analysis](./evidence/sample-2/email-body-text.png)
 
-C. Raw HTML Source Code (Payload Analysis)
+**C. Raw HTML Source Code (Payload Analysis)**
 The raw HTML payload showing the structure of the fake newsletter and the embedded hyperlink.
 ![Click here to view the Raw HTML Payload (Sanitized)](./evidence/sample-2/source-code/email-payload.html.txt)
 
 ---
 
-##🏁 Final Conclusion
+## 🏁 Final Conclusion
 
 This email is confirmed as Phishing with a High severity level. It demonstrates a sophisticated approach by bypassing traditional URL blocklists and abusing Google's platform reputation. Instead of stealing credentials via a fake website, the attacker aims to compromise the victim's browser through a malicious extension.
