@@ -1,4 +1,6 @@
-EMAIL PHISHING ANALYSIS REPORT (TICKET: INC-2026-003)
+---
+
+EMAIL PHISHING ANALYSIS REPORT TICKET: INC-2026-003
 
 Analyst: Andra
 Investigation Date: 23 November 2026
@@ -23,7 +25,7 @@ The attacker lures victims with a fake "Web3 Extension" promotion, directing the
 · Sender IP: 180.168.61.82
 · Authentication Results: spf=none, dkim=fail, dmarc=none
 
-Key Findings:
+*Key Findings:*
 
 1. Identity Obfuscation: The attacker encoded the Sender Name in Base64 (OKX Extension) to bypass basic text filters.
 2. Frankenstein Email (Infrastructure Abuse): The email is routed through a Chinese domain (handpay.com.cn) with an invalid DKIM signature (dev.roombird.ru from Russia). The complete lack of SPF/DMARC verification indicates a highly suspicious, unauthenticated sender.
