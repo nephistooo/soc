@@ -1,40 +1,38 @@
+#  Email Phishing Analysis Report
 
-
- Email Phishing Analysis Report
-
-Ticket ID: INC-2026-003
-Analyst: Andra
-Investigation Date: 23 November 2026
-Sample File: sample-2.eml
-Threat Type: Malicious Browser Extension Distribution (Credential & Crypto Wallet Theft)
-Status: Confirmed Phishing / High Severity
+**Ticket ID:** INC-2026-003 <br>
+**Analyst:** Andra <br>
+**Investigation Date:** 23 November 2026 <br>
+**Sample File:** sample-2.eml <br>
+**Threat Type:** Malicious Browser Extension Distribution (Credential & Crypto Wallet Theft) <br>
+**Status:**  Confirmed Phishing / High Severity
 
 ---
 
-1. Executive Summary
+## 1. Executive Summary
 
-A suspicious email was identified impersonating OKX, a well-known cryptocurrency exchange platform. Unlike traditional phishing campaigns that direct victims to fake login pages, this campaign utilizes a Malicious Browser Extension Distribution tactic.
+A suspicious email was identified impersonating **OKX**, a well-known cryptocurrency exchange platform. Unlike traditional phishing campaigns that direct victims to fake login pages, this campaign utilizes a **Malicious Browser Extension Distribution** tactic.
 
 The attacker lures victims with a fake "Web3 Extension" promotion, directing them to a legitimate Google Chrome Web Store link. However, the linked extension is a malicious clone designed to compromise the victim's crypto wallets or browser data.
 
-2. Header Analysis (Email Metadata)
+## 2. Header Analysis (Email Metadata)
 
-· Subject: [Encoded] OKX Web3 Extension - Advanced Chrome Extension for Web3.
-· From (Display Name): =?UTF-8?B?T0tYIEV4dGVuc2lvbg==?= (Decodes to "OKX Extension").
-· Return-Path: hpayMonitorPlatform@handpay.com.cn
-· Sender IP: 180.168.61.82
-· Authentication Results: spf=none, dkim=fail, dmarc=none
+- **Subject:** [Encoded] OKX Web3 Extension - Advanced Chrome Extension for Web3.
+- **From (Display Name):** `=?UTF-8?B?T0tYIEV4dGVuc2lvbg==?=` (Decodes to "OKX Extension").
+- **Return-Path:** `hpayMonitorPlatform@handpay.com.cn`
+- **Sender IP:** `180.168.61.82`
+- **Authentication Results:** `spf=none`, `dkim=fail`, `dmarc=none`
 
-Key Findings:
+**Key Findings:**
 
-· Identity Obfuscation: The attacker encoded the Sender Name in Base64 to bypass basic text filters.
-· Frankenstein Email (Infrastructure Abuse): The email is routed through a Chinese domain (handpay.com.cn) with an invalid DKIM signature (dev.roombird.ru from Russia). The complete lack of SPF/DMARC verification indicates a highly suspicious, unauthenticated sender.
-· Header Spoofing (Trust Abuse): The attacker included a List-Unsubscribe header pointing to a legitimate chromewebstore.google.com URL. This is a tactic to abuse Google's high domain reputation and trick email filters (like Microsoft Outlook) into believing this is a legitimate system notification.
-  Raw Header Snippet:
-  ```text
-  List-Unsubscribe: <https://chromewebstore.google.com/...>
-  Authentication-Results: spf=none; dkim=fail; dmarc=none
-  ```
+- **Identity Obfuscation:** The attacker encoded the Sender Name in Base64 to bypass basic text filters.
+- **Frankenstein Email (Infrastructure Abuse):** The email is routed through a Chinese domain (`handpay.com.cn`) with an invalid DKIM signature (`dev.roombird.ru` from Russia). The complete lack of SPF/DMARC verification indicates a highly suspicious, unauthenticated sender.
+- **Header Spoofing (Trust Abuse):** The attacker included a `List-Unsubscribe` header pointing to a legitimate `chromewebstore.google.com` URL. This is a tactic to abuse Google's high domain reputation and trick email filters (like Microsoft Outlook) into believing this is a legitimate system notification.
+
+> **Raw Header Snippet:**
+> ```text
+> List-Unsubscribe: <https://chromewebstore.google.com/...>
+> Authentication-Results: spf=none; dkim=fail; dmarc=none
 
 3. Email Body Analysis (Body & Payload)
 
@@ -67,18 +65,18 @@ Encoded Sender Identity T0tYIEV4dGVuc2lvbg== (OKX Extension)
 
 A. Email Header Analysis (Auth Fail & Header Spoofing)
 Shows the complete failure of SPF, DKIM, and DMARC, alongside the Base64 encoded sender name and the deceptive List-Unsubscribe header.
-![Email Header Analysis](./evidence/sample-2/header-analysis.png)
+./evidence/sample-2/header-analysis.png
 
 B. Decoded Email Body (Social Engineering & Malicious Link)
 The decoded plaintext reveals the marketing-style bait and the single malicious Chrome Web Store link.
-![Email Body Analysis](./evidence/sample-2/email-body-text.png)
+./evidence/sample-2/email-body-text.png
 
 C. Raw HTML Source Code (Payload Analysis)
 The raw HTML payload showing the structure of the fake newsletter and the embedded hyperlink.
-![Click here to view the Raw HTML Payload (Sanitized)](./evidence/sample-2/source-code/email-payload.html.txt)
+Click here to view the Raw HTML Payload (Sanitized)
 
 ---
 
  Final Conclusion
 
-This email is confirmed as Phishing with a High severity level. It demonstrates a sophisticated approach by bypassing traditional URL blocklists and abusing Google's platform reputation. Instead of stealing credentials via a fake website, the attacker aims to compromise the victim's browser through a malicious extension.
+This email is confirmed as Phishing with a High severity level. It demonstrates a sophisticated approach by bypassing traditional URL blocklists and abusing Google's platform reputation. Instead of stealing credentials via a fake website, the attacker aims to compromise the victim's browser through a malicious extension. >
