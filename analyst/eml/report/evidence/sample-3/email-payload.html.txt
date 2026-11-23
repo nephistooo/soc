@@ -1,0 +1,433 @@
+<!DOCTYPE html><html lang=3D"pt-BR"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+                <meta content=3D"width=3Ddevice-width, initial-scale=3D1.0" name=3D"viewp=
+ort">
+                <meta content=3D"IE=3Dedge" http-equiv=3D"X-UA-Compatible">
+                <title>Copa do Mundo 2026 | Visa Pr=C3=AAmios</title>
+                <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+        </head>
+        <body style=3D"margin: 0; padding: 0; background-color: #f0f2f5; font-fami=
+ly: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing:=
+ antialiased;">
+                <!-- FUNDO EXTERNO -->
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentat=
+ion" style=3D"background-color: #f0f2f5; width: 100%;">
+                        <tbody>
+                                <tr>
+                                        <td align=3D"center" style=3D"padding: 40px 10px;">
+                                                <!-- CONTAINER PRINCIPAL (M=C3=81XIMO 600PX) -->
+                                                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" style=3D"max-width: 600px; width: 100%; background-color: #ffffff;=
+ border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0=
+.05);">
+                                                        <tbody>
+                                                                <!-- CABE=C3=87ALHO VISA (AZUL GRADIENTE SIMULADO) -->
+                                                                <tr>
+                                                                        <td align=3D"center" style=3D"background-color: #1a1f71; backgroun=
+d-image: linear-gradient(to right, #1a1f71, #2b3290); padding: 40px 20px; c=
+olor: #ffffff;">
+                                                                           <h1 style=3D"margin: 0; font-size: 32px; font-weight: 800; text-t=
+ransform: uppercase; letter-spacing: 2px; line-height: 1.2;">
+                                                                           VISA 2026</h1>
+                                                                           <p style=3D"margin: 10px 0 0 0; font-size: 16px; font-weight: 400=
+; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px;">
+                                                                           Oficial da Copa do Mundo</p>
+                                                                        </td>
+                                                                </tr>
+                                                                <!-- IMAGEM DESTAQUE (PLACEHOLDER DIN=C3=82MICO) -->
+                                                                <tr>
+                                                                        <td align=3D"center" style=3D"background-color: #1a1f71;">
+                                                                           <!-- Imagem ilustrativa com bordas arredondadas embaixo --></td>
+                                                                </tr>
+                                                                <!-- T=C3=8DTULO E INTRO -->
+                                                                <tr>
+                                                                        <td style=3D"padding: 40px 30px 20px 30px; text-align: center;">
+                                                                           <h2 style=3D"margin: 0; color: #1a1f71; font-size: 24px; font-wei=
+ght: bold; line-height: 1.4;">
+                                                                           Pr=C3=AAmios para os verdadeiros craques</h2>
+                                                                           <p style=3D"margin: 15px 0 0 0; color: #555555; font-size: 16px; =
+line-height: 1.6;">
+                                                                           Em compras acima de <strong>R$ 10,00</strong> com seus cart=C3=
+=B5es Visa, voc=C3=AA entra no jogo e concorre a pr=C3=AAmios em dinheiro, =
+jantares no Outback, salas VIP e viagens pelo mundo:</p>
+                                                                        </td>
+                                                                </tr>
+                                                                <!-- GRID DE PR=C3=8AMIOS (2 COLUNAS) -->
+                                                                <tr>
+                                                                        <td style=3D"padding: 10px 30px 30px 30px;">
+                                                                           <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"p=
+resentation" width=3D"100%">
+                                                                           <tbody>
+                                                                           <tr>
+                                                                           <!-- PR=C3=8AMIO 1 -->
+                                                                           <td style=3D"padding: 8px;" valign=3D"top" width=3D"50%">
+                                                                           <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"background-color: #f8f9fa; border: 1px solid #e9=
+ecef; border-radius: 8px; overflow: hidden;" width=3D"100%">
+                                                                           <tbody>
+                                                                           <tr>
+                                                                           <td align=3D"center" style=3D"padding: 20px 15px;">
+                                                                           <div style=3D"font-size: 36px; line-height: 1; margin-bot=
+tom: 10px;">
+                                                                           =E2=9A=A1</div>
+                                                                           <div style=3D"color: #1a1f71; font-weight: 800; font-size=
+: 20px; margin-bottom: 4px;">
+                                                                           R$ 500,00</div>
+                                                                           <div style=3D"color: #666666; font-size: 13px; font-weigh=
+t: 500; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                                           Rel=C3=A2mpago</div>
+                                                                           </td>
+                                                                           </tr>
+                                                                           </tbody>
+                                                                           </table>
+                                                                           </td>
+                                                                           <!-- PR=C3=8AMIO 2 -->
+                                                                           <td style=3D"padding: 8px;" valign=3D"top" width=3D"50%">
+                                                                           <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"background-color: #f8f9fa; border: 1px solid #e9=
+ecef; border-radius: 8px; overflow: hidden;" width=3D"100%">
+                                                                           <tbody>
+                                                                           <tr>
+                                                                           <td align=3D"center" style=3D"padding: 20px 15px;">
+                                                                           <div style=3D"font-size: 36px; line-height: 1; margin-bot=
+tom: 10px;">
+                                                                           =F0=9F=8F=86</div>
+                                                                           <div style=3D"color: #1a1f71; font-weight: 800; font-size=
+: 20px; margin-bottom: 4px;">
+                                                                           R$ 2.000,00</div>
+                                                                           <div style=3D"color: #666666; font-size: 13px; font-weigh=
+t: 500; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                                           Semanais</div>
+                                                                           </td>
+                                                                           </tr>
+                                                                           </tbody>
+                                                                           </table>
+                                                                           </td>
+                                                                           </tr>
+                                                                           <tr>
+                                                                           <!-- PR=C3=8AMIO 3 -->
+                                                                           <td style=3D"padding: 8px;" valign=3D"top" width=3D"50%">
+                                                                           <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"background-color: #f8f9fa; border: 1px solid #e9=
+ecef; border-radius: 8px; overflow: hidden;" width=3D"100%">
+                                                                           <tbody>
+                                                                           <tr>
+                                                                           <td align=3D"center" style=3D"padding: 20px 15px;">
+                                                                           <div style=3D"font-size: 36px; line-height: 1; margin-bot=
+tom: 10px;">
+                                                                           =E2=9C=88=EF=B8=8F</div>
+                                                                           <div style=3D"color: #1a1f71; font-weight: 800; font-size=
+: 18px; margin-bottom: 4px;">
+                                                                           Copa 2026</div>
+                                                                           <div style=3D"color: #666666; font-size: 13px; font-weigh=
+t: 500; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                                           Experi=C3=AAncias VIP</div>
+                                                                           </td>
+                                                                           </tr>
+                                                                           </tbody>
+                                                                           </table>
+                                                                           </td>
+                                                                           <!-- PR=C3=8AMIO 4 -->
+                                                                           <td style=3D"padding: 8px;" valign=3D"top" width=3D"50%">
+                                                                           <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"background-color: #fff8e1; border: 1px solid #ff=
+eeba; border-radius: 8px; overflow: hidden;" width=3D"100%">
+                                                                           <tbody>
+                                                                           <tr>
+                                                                           <td align=3D"center" style=3D"padding: 20px 15px;">
+                                                                           <div style=3D"font-size: 36px; line-height: 1; margin-bot=
+tom: 10px;">
+                                                                           =F0=9F=92=8E</div>
+                                                                           <div style=3D"color: #d35400; font-weight: 800; font-size=
+: 20px; margin-bottom: 4px;">
+                                                                           R$ 100 MIL</div>
+                                                                           <div style=3D"color: #d35400; font-size: 13px; font-weigh=
+t: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                                           Sorteio Final</div>
+                                                                           </td>
+                                                                           </tr>
+                                                                           </tbody>
+                                                                           </table>
+                                                                           </td>
+                                                                           </tr>
+                                                                           </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                </tr>
+                                                                <!-- SORTEIO ESPECIAL =E2=80=94 EXPERI=C3=8ANCIAS -->
+                                                                <tr>
+                                                                        <td style=3D"padding: 0 30px 20px 30px;">
+                                                                           <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"p=
+resentation" style=3D"background: linear-gradient(135deg, #1a1f71 0%, #0d16=
+59 100%); background-color: #1a1f71; border-radius: 10px; overflow: hidden;=
+" width=3D"100%">
+                                                                           <tbody>
+                                                                           <tr>
+                                                                           <td style=3D"padding: 24px 20px 10px 20px; text-align: center;=
+">
+                                                                           <p style=3D"margin: 0 0 6px 0; font-size: 11px; font-weight: =
+800; letter-spacing: 2px; text-transform: uppercase; color: #ffc46a;">
+                                                                           Sorteio exclusivo</p>
+                                                                           <h3 style=3D"margin: 0; color: #ffffff; font-size: 20px; font=
+-weight: bold;">
+                                                                           Experi=C3=AAncias Inesquec=C3=ADveis</h3>
+                                                                           <p style=3D"margin: 12px 0 0 0; color: rgba(255,255,255,0.85)=
+; font-size: 14px; line-height: 1.55;">
+                                                                           Jantar gr=C3=A1tis no Outback, salas VIP e viagens internaci=
+onais com acompanhante.</p>
+                                                                           </td>
+                                                                           </tr>
+                                                                           <tr>
+                                                                           <td style=3D"padding: 10px 12px 20px 12px;">
+                                                                           <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" width=3D"100%">
+                                                                           <tbody>
+                                                                           <tr>
+                                                                           <td style=3D"padding: 6px;" valign=3D"top" width=3D"33%">
+                                                                           <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation" style=3D"background-color: #ffffff; border-radius: 8px=
+;" width=3D"100%">
+                                                                           <tbody>
+                                                                           <tr>
+                                                                           <td align=3D"center" style=3D"padding: 16px 10px; back=
+ground-color: #6b1f1f; border-radius: 8px 8px 0 0;">
+                                                                           <div style=3D"font-size: 28px;">=F0=9F=A5=A9</div>
+                                                                           <div style=3D"color: #ffffff; font-size: 11px; font-w=
+eight: 800; text-transform: uppercase; margin-top: 6px;">Outback</div>
+                                                                           </td>
+                                                                           </tr>
+                                                                           <tr>
+                                                                           <td align=3D"center" style=3D"padding: 14px 10px;">
+                                                                           <div style=3D"color: #1a1f71; font-weight: 800; font-=
+size: 13px; line-height: 1.3; margin-bottom: 6px;">Jantar gr=C3=A1tis p/ 2<=
+/div>
+                                                                           <div style=3D"color: #888; font-size: 11px; line-heig=
+ht: 1.4;">100 jantares</div>
+                                                                           </td>
+                                                                           </tr>
+                                                                           </tbody>
+                                                                           </table>
+                                                                           </td>
+                                                                           <td style=3D"padding: 6px;" valign=3D"top" width=3D"33%">
+                                                                           <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation" style=3D"background-color: #ffffff; border-radius: 8px=
+;" width=3D"100%">
+                                                                           <tbody>
+                                                                           <tr>
+                                                                           <td align=3D"center" style=3D"padding: 16px 10px; back=
+ground-color: #1a1f71; border-radius: 8px 8px 0 0;">
+                                                                           <div style=3D"font-size: 28px;">=F0=9F=8E=9F=EF=B8=8F=
+</div>
+                                                                           <div style=3D"color: #ffffff; font-size: 11px; font-w=
+eight: 800; text-transform: uppercase; margin-top: 6px;">Salas VIP</div>
+                                                                           </td>
+                                                                           </tr>
+                                                                           <tr>
+                                                                           <td align=3D"center" style=3D"padding: 14px 10px;">
+                                                                           <div style=3D"color: #1a1f71; font-weight: 800; font-=
+size: 13px; line-height: 1.3; margin-bottom: 6px;">Acesso VIP</div>
+                                                                           <div style=3D"color: #888; font-size: 11px; line-heig=
+ht: 1.4;">30 pacotes</div>
+                                                                           </td>
+                                                                           </tr>
+                                                                           </tbody>
+                                                                           </table>
+                                                                           </td>
+                                                                           <td style=3D"padding: 6px;" valign=3D"top" width=3D"33%">
+                                                                           <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation" style=3D"background-color: #ffffff; border-radius: 8px=
+;" width=3D"100%">
+                                                                           <tbody>
+                                                                           <tr>
+                                                                           <td align=3D"center" style=3D"padding: 16px 10px; back=
+ground-color: #0a4d68; border-radius: 8px 8px 0 0;">
+                                                                           <div style=3D"font-size: 28px;">=F0=9F=8C=8D</div>
+                                                                           <div style=3D"color: #ffffff; font-size: 11px; font-w=
+eight: 800; text-transform: uppercase; margin-top: 6px;">Viagens</div>
+                                                                           </td>
+                                                                           </tr>
+                                                                           <tr>
+                                                                           <td align=3D"center" style=3D"padding: 14px 10px;">
+                                                                           <div style=3D"color: #1a1f71; font-weight: 800; font-=
+size: 13px; line-height: 1.3; margin-bottom: 6px;">Pelo mundo</div>
+                                                                           <div style=3D"color: #888; font-size: 11px; line-heig=
+ht: 1.4;">5 viagens</div>
+                                                                           </td>
+                                                                           </tr>
+                                                                           </tbody>
+                                                                           </table>
+                                                                           </td>
+                                                                           </tr>
+                                                                           </tbody>
+                                                                           </table>
+                                                                           <p style=3D"margin: 14px 0 0 0; text-align: center; font-size=
+: 12px; color: rgba(255,255,255,0.75); line-height: 1.5;">
+                                                                           Participa=C3=A7=C3=A3o: <strong style=3D"color: #ffc46a;">01=
+/06 a 12/07/2026</strong> &nbsp;|&nbsp; Sorteio: <strong style=3D"color: #f=
+fc46a;">16/07/2026</strong></p>
+                                                                           </td>
+                                                                           </tr>
+                                                                           </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                </tr>
+                                                                <!-- SEPARADOR VISUAL -->
+                                                                <tr>
+                                                                        <td align=3D"center" style=3D"padding: 0 40px;">
+                                                                           <div style=3D"height: 1px; background-color: #e0e0e0; width: 100%=
+;">
+                                                                           &nbsp;</div>
+                                                                        </td>
+                                                                </tr>
+                                                                <!-- TABELA DE CALEND=C3=81RIO (DATAS ATUALIZADAS JUNHO 2026) -->
+                                                                <tr>
+                                                                        <td style=3D"padding: 30px 30px 20px 30px;">
+                                                                           <h3 style=3D"color: #1a1f71; font-size: 18px; margin: 0 0 8px 0; =
+text-align: left; font-weight: bold;">
+                                                                           =F0=9F=93=85 Calend=C3=A1rio de Sorteios</h3>
+                                                                           <p style=3D"margin: 0 0 20px 0; font-size: 13px; color: #777; lin=
+e-height: 1.5; text-align: left;">
+                                                                           Cadastro de <strong>01/06 a 19/07/2026</strong>. Primeiros sorte=
+ios a partir de <strong>30/06/2026</strong>.</p>
+                                                                           <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"p=
+resentation" style=3D"border-collapse: collapse; border: 1px solid #dddddd;=
+" width=3D"100%">
+                                                                           <tbody>
+                                                                           <!-- Linha 1 -->
+                                                                           <tr style=3D"background-color: #f8f9fa;">
+                                                                           <td style=3D"padding: 12px 15px; border-bottom: 1px solid #ddd=
+ddd; font-size: 14px; color: #333333; width: 40%;">
+                                                                           <strong style=3D"display:block; color: #1a1f71;">1=C2=AA Fase=
+</strong> <span style=3D"font-size: 12px; color: #777;">01/06 a 28/06/2026<=
+/span></td>
+                                                                           <td style=3D"padding: 12px 15px; border-bottom: 1px solid #ddd=
+ddd; font-size: 13px; color: #555555; width: 30%;">
+                                                                           30/06, 03/07, 06/07 e 09/07</td>
+                                                                           <td align=3D"right" style=3D"padding: 12px 15px; border-bottom=
+: 1px solid #dddddd; font-size: 14px; color: #1a1f71; font-weight: bold; wi=
+dth: 30%;">
+                                                                           30x R$ 500</td>
+                                                                           </tr>
+                                                                           <!-- Linha 2 -->
+                                                                           <tr style=3D"background-color: #ffffff;">
+                                                                           <td style=3D"padding: 12px 15px; border-bottom: 1px solid #ddd=
+ddd; font-size: 14px; color: #333333;">
+                                                                           <strong style=3D"display:block; color: #1a1f71;">2=C2=AA Fase=
+</strong> <span style=3D"font-size: 12px; color: #777;">01/06 a 11/07/2026<=
+/span></td>
+                                                                           <td style=3D"padding: 12px 15px; border-bottom: 1px solid #ddd=
+ddd; font-size: 13px; color: #555555;">
+                                                                           14/07, 18/07 e 23/07</td>
+                                                                           <td align=3D"right" style=3D"padding: 12px 15px; border-bottom=
+: 1px solid #dddddd; font-size: 14px; color: #1a1f71; font-weight: bold;">
+                                                                           20x R$ 2.000</td>
+                                                                           </tr>
+                                                                           <!-- Linha 3 -->
+                                                                           <tr style=3D"background-color: #f8f9fa;">
+                                                                           <td style=3D"padding: 12px 15px; border-bottom: 1px solid #ddd=
+ddd; font-size: 14px; color: #333333;">
+                                                                           <strong style=3D"display:block; color: #1a1f71;">3=C2=AA Fase=
+</strong> <span style=3D"font-size: 12px; color: #777;">01/06 a 16/07/2026<=
+/span></td>
+                                                                           <td style=3D"padding: 12px 15px; border-bottom: 1px solid #ddd=
+ddd; font-size: 13px; color: #555555;">
+                                                                           25/07/2026</td>
+                                                                           <td align=3D"right" style=3D"padding: 12px 15px; border-bottom=
+: 1px solid #dddddd; font-size: 14px; color: #1a1f71; font-weight: bold;">
+                                                                           50x R$ 1.000</td>
+                                                                           </tr>
+                                                                           <!-- Linha Experi=C3=AAncias -->
+                                                                           <tr style=3D"background-color: #eef0ff;">
+                                                                           <td style=3D"padding: 12px 15px; border-bottom: 1px solid #ddd=
+ddd; font-size: 14px; color: #333333; border-left: 4px solid #1a1f71;">
+                                                                           <strong style=3D"display:block; color: #1a1f71;">Sorteio Expe=
+ri=C3=AAncias</strong> <span style=3D"font-size: 12px; color: #777;">01/06 =
+a 12/07/2026</span></td>
+                                                                           <td style=3D"padding: 12px 15px; border-bottom: 1px solid #ddd=
+ddd; font-size: 13px; color: #555555;">
+                                                                           16/07/2026</td>
+                                                                           <td align=3D"right" style=3D"padding: 12px 15px; border-bottom=
+: 1px solid #dddddd; font-size: 12px; color: #1a1f71; font-weight: bold; li=
+ne-height: 1.4;">
+                                                                           Outback =C2=B7 VIP =C2=B7 Viagens</td>
+                                                                           </tr>
+                                                                           <!-- Linha Final (Destaque) -->
+                                                                           <tr style=3D"background-color: #fff3cd;">
+                                                                           <td style=3D"padding: 15px; font-size: 14px; color: #333333; b=
+order-left: 4px solid #f79621;">
+                                                                           <strong style=3D"display:block; color: #856404;">GRANDE FINAL=
+</strong> <span style=3D"font-size: 12px; color: #856404;">01/06 a 19/07/20=
+26</span></td>
+                                                                           <td style=3D"padding: 15px; font-size: 13px; color: #856404;">
+                                                                           01/08/2026</td>
+                                                                           <td align=3D"right" style=3D"padding: 15px; font-size: 15px; c=
+olor: #d35400; font-weight: 900; text-transform: uppercase;">
+                                                                           10x 100 MIL</td>
+                                                                           </tr>
+                                                                           </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                </tr>
+                                                                <!-- BOT=C3=83O DE A=C3=87=C3=83O (CTA) -->
+                                                                <tr>
+                                                                        <td align=3D"center" style=3D"padding: 20px 30px 50px 30px;">
+                                                                           <!-- Substitua o href=3D"SITE" pelo link real --><a href=3D"https=
+://cop4asojateosom0-1094100152898.us-central1.run.app/?cid=3Dphishing@pot@ho=
+tmail.com" style=3D"background-color: #f79621; color: #ffffff; text-decorat=
+ion: none; padding: 18px 50px; border-radius: 50px; font-weight: 800; font-=
+size: 18px; display: inline-block; text-transform: uppercase; box-shadow: 0=
+ 4px 10px rgba(247, 150, 33, 0.4); border: 2px solid #f79621;">Quero Partic=
+ipar </a>
+                                                                           <p style=3D"margin-top: 15px; font-size: 12px; color: #888; line-=
+height: 1.5;">
+                                                                           Clique e garanta seu lugar. Sorteios a partir de 30/06/2026.<br>
+                                                                           Consulte o regulamento completo da promo=C3=A7=C3=A3o.</p>
+                                                                        </td>
+                                                                </tr>
+                                                                <!-- RODAP=C3=89 -->
+                                                                <tr>
+                                                                        <td align=3D"center" style=3D"background-color: #1a1f71; padding: =
+30px 20px; color: #ffffff; font-size: 12px;">
+                                                                           <p style=3D"margin: 0 0 5px 0; font-weight: bold; font-size: 16px=
+; letter-spacing: 2px;">
+                                                                           VISA</p>
+                                                                           <p style=3D"margin: 5px 0; opacity: 0.7; line-height: 1.5;">
+                                                                           =C2=A9 2026 Visa Worldwide. Todos os direitos reservados.</p>
+                                                                           <p style=3D"margin: 5px 0 0 0; opacity: 0.5; font-size: 11px;">
+                                                                           Esta =C3=A9 uma mensagem promocional. A promo=C3=A7=C3=A3o =C3=
+=A9 sujeita a regulamento oficial.<br>
+                                                                           Caso n=C3=A3o queira receber mais e-mails, cancele sua inscri=C3=
+=A7=C3=A3o.</p>
+                                                                        </td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                                <!-- FIM CONTAINER CENTRAL --><!-- TEXTO ABAIXO DO CARD (OPCIONAL) --=
+>
+                                                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" style=3D"max-width: 600px; width: 100%; margin-top: 20px;">
+                                                        <tbody>
+                                                                <tr>
+                                                                        <td align=3D"center" style=3D"font-size: 11px; color: #999;">
+                                                                           <p style=3D"margin:0;">
+                                                                           Enviado com seguran=C3=A7a para clientes Visa.</p>
+                                                                        </td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                        </td>
+                                </tr>
+                        </tbody>
+                </table>
+                <p>
+                        &nbsp;</p>
+        </body>
+</html>
