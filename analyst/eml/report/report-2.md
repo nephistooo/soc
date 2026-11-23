@@ -57,7 +57,9 @@ Authentication-Results: spf=none; dkim=fail; dmarc=none
 
 **B. The Payload (Malicious Link):**
 
-· The attacker does not host a phishing page. Instead, they redirect victims to a real Chrome Web Store URL: 
+· The attacker does not host a phishing page. Instead, they redirect victims to a real Chrome Web Store. 
+
+URL: 
 
 ```text
 hxxps://chromewebstore.google[.]com/detail/okx-wallet-dashboard/inophbikolocipigmkhlfkdkkiccjgpgh
