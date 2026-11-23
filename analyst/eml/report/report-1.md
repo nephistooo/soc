@@ -94,7 +94,7 @@ A. Email Header Analysis (Spoofing & Authentication Failure)
 *   This indicates the receiving server could not verify if the email was sent from an authorized Bradesco server. It also clearly shows a mismatch between the display name (`atendimento.com.br`) and the actual sending address (`ubuntu-s-1vcpu...`).
   
 *   **Suspicious Origin (Bottom Highlight):** This email *should* have originated from the bank's official mail server. However, the header proves it was actually sent from a low-cost Virtual Private Server (VPS) named `ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06`.
-*
+
 *   A legitimate bank would never use a cheap VPS for official communication.
 
 B. Base64 Decoded Payload (Social Engineering & Malicious URL)
