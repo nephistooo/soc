@@ -77,9 +77,12 @@ Encoded Sender Identity: T0tYIEV4dGVuc2lvbg== (OKX Extension)
 
 5. Recommendations & Mitigation
 
-· Block Domains & IPs: Block emails originating from handpay.com.cn and add the Sender IP to the firewall blocklist.<br>
-· Report the Extension: Report the malicious Chrome extension ID to Google for takedown.<br>
-· User Education: Educate employees that cybercriminals can abuse legitimate app stores. Always verify the developer's official website before installing any extension, even if the link comes from Google.<br>
+· Block Domains & IPs: Block emails originating from handpay.com.cn and add the Sender IP to the firewall blocklist.
+
+· Report the Extension: Report the malicious Chrome extension ID to Google for takedown.
+
+· User Education: Educate employees that cybercriminals can abuse legitimate app stores. Always verify the developer's official website before installing any extension, even if the link comes from Google.
+
 · Endpoint Check: Scan the endpoints of any users who might have clicked the link to ensure no malicious extensions were installed.
 
 6. Evidence / Appendices
