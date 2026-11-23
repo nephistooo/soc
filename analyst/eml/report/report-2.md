@@ -23,7 +23,8 @@ The attacker lures victims with a fake "Web3 Extension" promotion, directing the
 
 · From (Display Name): =?UTF-8?B?T0tYIEV4dGVuc2lvbg==?= (Decodes to "OKX Extension").
 
-· Return-Path: hpayMonitorPlatform@handpay.com.cn
+· Return-Path: hpayMonitorPlatform@handpay.com.cn.
+
 · Sender IP: 180.168.61.82.
 
 · Authentication Results: spf=none, dkim=fail, dmarc=none.
