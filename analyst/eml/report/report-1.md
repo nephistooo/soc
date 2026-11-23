@@ -89,7 +89,7 @@ A. Email Header Analysis (Spoofing & Authentication Failure)
 
 *Analysis Notes:*
 
-*   **Authentication Failure (Top Highlight):** The SPF and DMARC results returned `temperror` and `fail`.
+*   **Authentication Failure (Top Highlight):** The SPF and DMARC both results returned `temperror`.
 
 *   This indicates the receiving server could not verify if the email was sent from an authorized Bradesco server. It also clearly shows a mismatch between the display name (`atendimento.com.br`) and the actual sending address (`ubuntu-s-1vcpu...`).
   
