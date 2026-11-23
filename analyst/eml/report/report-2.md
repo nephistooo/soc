@@ -11,7 +11,7 @@ Status: Confirmed Phishing / Malicious
 
 1. Executive Summary
 
-A suspicious email was identified impersonating OKX, a well-known cryptocurrency exchange platform. Unlike traditional phishing emails that direct victims to fake login pages, this campaign utilizes a Malicious Browser Extension Distribution tactic.
+  A suspicious email was identified impersonating OKX, a well-known cryptocurrency exchange platform. Unlike traditional phishing emails that direct victims to fake login pages, this campaign utilizes a Malicious Browser Extension Distribution tactic.
 
 The attacker lures victims with a fake "Web3 Extension" promotion, directing them to a legitimate Google Chrome Web Store link. However, the linked extension is a malicious clone designed to compromise the victim's crypto wallets or browser data.
 
@@ -41,13 +41,13 @@ The attacker lures victims with a fake "Web3 Extension" promotion, directing the
 
 3. Email Body Analysis (Body & Payload)
 
-· *Social Engineering Tactics*:
+  A. Social Engineering Tactics:
 
   · Authority & FOMO: Uses the famous "OKX" brand and promises exclusive access to "Decentralized Finance Technology" to lure crypto enthusiasts.
   
   · Fake Legitimacy: Claims to have "Over 10 million users" and a "4.7/5 Rating" to build trust.
   
-· *The Payload (Malicious Link)*:
+ B. The Payload (Malicious Link):
 
   · The attacker does not host a phishing page. Instead, they redirect victims to a real Chrome Web Store URL: *hxxps://chromewebstore.google.com/detail/okx-wallet-dashboard/inophbikolocipigmkhlfkdkkiccjgpgh*.
   
@@ -81,15 +81,15 @@ The attacker lures victims with a fake "Web3 Extension" promotion, directing the
 
 6. Evidence / Appendices
 
-A. Email Header Analysis (Auth Fail & Header Spoofing)
+  A. Email Header Analysis (Auth Fail & Header Spoofing)
 Description: Shows the complete failure of SPF, DKIM, and DMARC, alongside the Base64 encoded sender name and the deceptive List-Unsubscribe header.
 ![](./evidence/sample-2/header-analysis.png)
 
-B. Decoded Email Body (Social Engineering & Malicious Link)
+  B. Decoded Email Body (Social Engineering & Malicious Link)
 Description: The decoded plaintext reveals the marketing-style bait and the single malicious Chrome Web Store link.
 ![](./evidence/sample-2/email-body-text.png)
 
-C. Raw HTML Source Code (Payload Analysis)
+  C. Raw HTML Source Code (Payload Analysis)
 Description: The raw HTML payload showing the structure of the fake newsletter and the embedded hyperlink.
 ![Click here to view the Raw HTML Payload](./evidence/sample-2/source-code/email-payload.html)
 
@@ -97,4 +97,4 @@ Description: The raw HTML payload showing the structure of the fake newsletter a
 
  Final Conclusion
 
-This email is confirmed as Phishing with a High severity level. It demonstrates a sophisticated approach by bypassing traditional URL blocklists and abusing Google's platform reputation. Instead of stealing credentials via a fake website, the attacker aims to compromise the victim's browser through a malicious extension.
+   This email is confirmed as Phishing with a High severity level. It demonstrates a sophisticated approach by bypassing traditional URL blocklists and abusing Google's platform reputation. Instead of stealing credentials via a fake website, the attacker aims to compromise the victim's browser through a malicious extension.
