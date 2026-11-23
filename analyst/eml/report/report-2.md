@@ -88,14 +88,17 @@ Encoded Sender Identity: T0tYIEV4dGVuc2lvbg== (OKX Extension)
 ## 6. Evidence / Appendices
 
 **A. Email Header Analysis (Auth Fail & Header Spoofing)**
+
 Shows the complete failure of SPF, DKIM, and DMARC, alongside the Base64 encoded sender name and the deceptive List-Unsubscribe header.
 ![Email header analysis](./evidence/sample-2/header-analysis.png)
 
 **B. Decoded Email Body (Social Engineering & Malicious Link)**
+
 The decoded plaintext reveals the marketing-style bait and the single malicious Chrome Web Store link.
 ![Email body analysis](./evidence/sample-2/email-body-text.png)
 
 **C. Raw HTML Source Code (Payload Analysis)**
+
 The raw HTML payload showing the structure of the fake newsletter and the embedded hyperlink.
 ![Click here to view the Raw HTML Payload (Sanitized)](./evidence/sample-2/source-code/email-payload.html.txt)
 
