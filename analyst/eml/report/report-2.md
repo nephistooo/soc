@@ -74,7 +74,7 @@ Description: The decoded plaintext reveals the marketing-style bait and the sing
 
 C. Raw HTML Source Code (Payload Analysis)
 Description: The raw HTML payload showing the structure of the fake newsletter and the embedded hyperlink.
-![](./evidence/sample-2/source-code/email-payload.html)
+![Click here to view the Raw HTML Payload](./evidence/sample-2/source-code/email-payload.html)
 
 ---
 
