@@ -14,7 +14,7 @@ Status: Confirmed Phishing / High Severity
 
 ---
 
-1. Executive Summary
+***1. Executive Summary***
 
 A suspicious email was identified impersonating OKX, a well-known cryptocurrency exchange platform. Unlike traditional phishing campaigns that direct victims to fake login pages, this campaign utilizes a Malicious Browser Extension Distribution tactic.
 
