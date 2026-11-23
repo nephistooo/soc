@@ -19,11 +19,15 @@ The attacker bypassed basic authentication checks by abusing a seemingly legitim
 
 **2. Header Analysis (Email Metadata)**
 
-· Subject: Erkennt alle Radarbänder X K Ka und KI
-· From (Display Name): Speeder Pro Radar *<alert.fujyd@naturespaints.com>*
-· Return-Path: *alert.ktzem@naturespaints.com*
-· Sender IP: 52.142.184.119 (Hosting Provider Infrastructure)
-· Authentication Results: spf=pass, dkim=pass, dmarc=bestguesspass
+· Subject: Erkennt alle Radarbänder X K Ka und KI.
+
+· From (Display Name): Speeder Pro Radar *<alert.fujyd@naturespaints.com>*.
+
+· Return-Path: *alert.ktzem@naturespaints.com*.
+
+· Sender IP: 52.142.184.119 (Hosting Provider Infrastructure).
+
+· Authentication Results: spf=pass, dkim=pass, dmarc=pass.
 
 ---
 
@@ -62,17 +66,17 @@ The attacker bypassed basic authentication checks by abusing a seemingly legitim
 This is a list of "evidence" that must be blocked by the IT/Network team:
 
 · Malicious URL 1 (Fallback):
-*hxxp://172-202-98-170.cloud-xip[.]com/4KYY...*
+*hxxp://172-202-98-170.cloud-xip[.]com/4KYY...*.
 
-· Malicious URL 2 (Image 1): *hxxp://oppvfoab.172-202-98-170.cloud-xip[.]com/4JqE...*
+· Malicious URL 2 (Image 1): *hxxp://oppvfoab.172-202-98-170.cloud-xip[.]com/4JqE...*.
 
-· Malicious URL 3 (Image 2): *hxxp://kjujzwne.172-202-98-170.cloud-xip[.]com/5sGo...*
+· Malicious URL 3 (Image 2): *hxxp://kjujzwne.172-202-98-170.cloud-xip[.]com/5sGo...*.
 
-· Tracking URL: *hxxp://uicavxea.172-202-98-170.cloud-xip[.]com/track/...*
+· Tracking URL: *hxxp://uicavxea.172-202-98-170.cloud-xip[.]com/track/...*.
 
-· Sender IP: 52.142.184.119
+· Sender IP: 52.142.184.119.
 
-· Attacker Infrastructure IP: 172.202.98.170
+· Attacker Infrastructure IP: 172.202.98.170.
 
 · Abused Domains: *naturespaints.com*, *aeronovahq.co.uk*.
 
