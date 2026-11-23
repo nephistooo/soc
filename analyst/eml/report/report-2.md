@@ -66,15 +66,15 @@ The attacker lures victims with a fake "Web3 Extension" promotion, directing the
 
 A. Email Header Analysis (Auth Fail & Header Spoofing)
 Description: Shows the complete failure of SPF, DKIM, and DMARC, alongside the Base64 encoded sender name and the deceptive List-Unsubscribe header.
-./evidence/sample-2/header-analysis.png
+[](./evidence/sample-2/header-analysis.png)
 
 B. Decoded Email Body (Social Engineering & Malicious Link)
 Description: The decoded plaintext reveals the marketing-style bait and the single malicious Chrome Web Store link.
-./evidence/sample-2/email-body-text.png
+[](./evidence/sample-2/email-body-text.png)
 
 C. Raw HTML Source Code (Payload Analysis)
 Description: The raw HTML payload showing the structure of the fake newsletter and the embedded hyperlink.
-View Raw HTML Source Code
+[](./evidence/sample-2/source-code/email-payload.html)
 
 ---
 
