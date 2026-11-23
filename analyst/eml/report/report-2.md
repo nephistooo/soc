@@ -1,4 +1,4 @@
-Email Phishing Analysis Report
+📧 Email Phishing Analysis Report
 
 Ticket ID: INC-2026-003 
 
@@ -10,7 +10,7 @@ Sample File: sample-2.eml
 
 Threat Type: Malicious Browser Extension Distribution (Credential & Crypto Wallet Theft) 
 
-Status: Confirmed Phishing / High Severity
+Status: 🔴 Confirmed Phishing / High Severity
 
 ---
 
@@ -22,11 +22,15 @@ The attacker lures victims with a fake "Web3 Extension" promotion, directing the
 
 2. Header Analysis (Email Metadata)
 
-· Subject: [Encoded] OKX Web3 Extension - Advanced Chrome Extension for Web3.
-· From (Display Name): =?UTF-8?B?T0tYIEV4dGVuc2lvbg==?= (Decodes to "OKX Extension").
-· Return-Path: hpayMonitorPlatform@handpay.com.cn
-· Sender IP: 180.168.61.82
-· Authentication Results: spf=none, dkim=fail, dmarc=none
+Subject: [Encoded] OKX Web3 Extension - Advanced Chrome Extension for Web3. 
+
+From (Display Name): =?UTF-8?B?T0tYIEV4dGVuc2lvbg==?= (Decodes to "OKX Extension"). 
+
+Return-Path: hpayMonitorPlatform@handpay.com.cn 
+
+Sender IP: 180.168.61.82 
+
+Authentication Results: spf=none, dkim=fail, dmarc=none
 
 Key Findings:
 
@@ -55,10 +59,13 @@ B. The Payload (Malicious Link):
 
 4. Indicators of Compromise (IoCs)
 
-· Malicious Extension ID: inophbikolocipigmkhlfkdkkiccjgpgh
-· Sender IP: 180.168.61.82
-· Abused Domains: handpay.com.cn, dev.roombird.ru
-· Encoded Sender Identity: T0tYIEV4dGVuc2lvbg== (OKX Extension)
+Malicious Extension ID: inophbikolocipigmkhlfkdkkiccjgpgh 
+
+Sender IP: 180.168.61.82 
+
+Abused Domains: handpay.com.cn, dev.roombird.ru 
+
+Encoded Sender Identity: T0tYIEV4dGVuc2lvbg== (OKX Extension)
 
 5. Recommendations & Mitigation
 
@@ -71,11 +78,11 @@ B. The Payload (Malicious Link):
 
 A. Email Header Analysis (Auth Fail & Header Spoofing)
 Shows the complete failure of SPF, DKIM, and DMARC, alongside the Base64 encoded sender name and the deceptive List-Unsubscribe header.
-![Email Header Analysis](./evidence/sample-2/header-analysis.png)
+![Email header analysis](./evidence/sample-2/header-analysis.png)
 
 B. Decoded Email Body (Social Engineering & Malicious Link)
 The decoded plaintext reveals the marketing-style bait and the single malicious Chrome Web Store link.
-![Email Body Analysis](./evidence/sample-2/email-body-text.png)
+![Email body analysis](./evidence/sample-2/email-body-text.png)
 
 C. Raw HTML Source Code (Payload Analysis)
 The raw HTML payload showing the structure of the fake newsletter and the embedded hyperlink.
@@ -83,6 +90,6 @@ The raw HTML payload showing the structure of the fake newsletter and the embedd
 
 ---
 
- Final Conclusion
+🏁 Final Conclusion
 
 This email is confirmed as Phishing with a High severity level. It demonstrates a sophisticated approach by bypassing traditional URL blocklists and abusing Google's platform reputation. Instead of stealing credentials via a fake website, the attacker aims to compromise the victim's browser through a malicious extension.
