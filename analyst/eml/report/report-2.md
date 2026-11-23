@@ -35,7 +35,9 @@ Authentication Results: spf=none, dkim=fail, dmarc=none
 Key Findings:
 
 · Identity Obfuscation: The attacker encoded the Sender Name in Base64 to bypass basic text filters.
+
 · Frankenstein Email (Infrastructure Abuse): The email is routed through a Chinese domain (handpay.com.cn) with an invalid DKIM signature (dev.roombird.ru from Russia). The complete lack of SPF/DMARC verification indicates a highly suspicious, unauthenticated sender.
+
 · Header Spoofing (Trust Abuse): The attacker included a List-Unsubscribe header pointing to a legitimate chromewebstore.google.com URL. This is a tactic to abuse Google's high domain reputation and trick email filters (like Microsoft Outlook) into believing this is a legitimate system notification.
 
 Raw Header Snippet:
@@ -50,11 +52,17 @@ Authentication-Results: spf=none; dkim=fail; dmarc=none
 A. Social Engineering Tactics:
 
 · Authority & FOMO: Uses the famous "OKX" brand and promises exclusive access to "Decentralized Finance Technology" to lure crypto enthusiasts.
+
 · Fake Legitimacy: Claims to have "Over 10 million users" and a "4.7/5 Rating" to build trust.
 
 B. The Payload (Malicious Link):
 
-· The attacker does not host a phishing page. Instead, they redirect victims to a real Chrome Web Store URL: hxxps://chromewebstore.google[.]com/detail/okx-wallet-dashboard/inophbikolocipigmkhlfkdkkiccjgpgh
+· The attacker does not host a phishing page. Instead, they redirect victims to a real Chrome Web Store URL: 
+
+```text
+hxxps://chromewebstore.google[.]com/detail/okx-wallet-dashboard/inophbikolocipigmkhlfkdkkiccjgpgh
+```
+
 · The extension ID (inophbikolocipigmkhlfkdkkiccjgpgh) is a malicious clone. Once installed, it can steal browser cookies, passwords, or cryptocurrency seed phrases.
 
 4. Indicators of Compromise (IoCs)
@@ -69,9 +77,9 @@ Encoded Sender Identity: T0tYIEV4dGVuc2lvbg== (OKX Extension)
 
 5. Recommendations & Mitigation
 
-· Block Domains & IPs: Block emails originating from handpay.com.cn and add the Sender IP to the firewall blocklist.
-· Report the Extension: Report the malicious Chrome extension ID to Google for takedown.
-· User Education: Educate employees that cybercriminals can abuse legitimate app stores. Always verify the developer's official website before installing any extension, even if the link comes from Google.
+· Block Domains & IPs: Block emails originating from handpay.com.cn and add the Sender IP to the firewall blocklist.<br>
+· Report the Extension: Report the malicious Chrome extension ID to Google for takedown.<br>
+· User Education: Educate employees that cybercriminals can abuse legitimate app stores. Always verify the developer's official website before installing any extension, even if the link comes from Google.<br>
 · Endpoint Check: Scan the endpoints of any users who might have clicked the link to ensure no malicious extensions were installed.
 
 6. Evidence / Appendices
