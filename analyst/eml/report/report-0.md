@@ -13,7 +13,9 @@ Status: Confirmed Phishing / Malicious
 
 A suspicious email was identified targeting German-speaking users with a fake promotional offer for a "Speeder Pro Radar" product. Unlike the previous sample (which used low-reputation VPS and Base64), this campaign uses a more sophisticated evasion technique.
 
-The attacker bypassed basic authentication checks by abusing a seemingly legitimate domain (naturespaints.com) and transmitted the payload in plain HTML (7bit). The email utilizes complex HTML obfuscation, including randomized subdomains and hidden tracking pixels, to evade security filters and monitor victim engagement.
+The attacker bypassed basic authentication checks by abusing a seemingly legitimate domain (naturespaints.com) and transmitted the payload in plain HTML (7bit). 
+
+The email utilizes complex HTML obfuscation, including randomized subdomains and hidden tracking pixels, to evade security filters and monitor victim engagement.
 
 ---
 
@@ -35,7 +37,11 @@ The attacker bypassed basic authentication checks by abusing a seemingly legitim
 
 . Domain Reputation Abuse: The attacker did not use a cheap VPS. They sent from *naturespaints.com*, which likely has an establishe reputation (or was compromised) to successfully pass SPF/DMARC checks and bypass spam filters.
 
-. Authentication Mismatch (Spoofing Indicator): Although the SPF shows pass, there is a glaring mismatch. The header.from is naturespaints.com, but the DKIM signature (header.d) resolves to *suntlzynb.aeronovahq.co.uk*. This proves the email is being relayed through a different infrastructure than it claims.
+. Authentication Mismatch (Spoofing Indicator): Although the SPF shows pass, there is a glaring mismatch. 
+
+The header.from is naturespaints.com, but the DKIM signature (header.d) resolves to *suntlzynb.aeronovahq.co.uk*. 
+
+This proves the email is being relayed through a different infrastructure than it claims.
 
 ---
 
@@ -43,19 +49,25 @@ The attacker bypassed basic authentication checks by abusing a seemingly legitim
 
 · Encoding: The email body uses 7bit (plaintext HTML). This means the malicious structure is visible without decoding, likely because the attacker is relying on domain reputation rather than text obfuscation to bypass filters.
 
-· Language & Social Engineering: The payload uses German text ("Zeitlich begrenztes Angebot 75% Rabatt auf Speeder Pro"), translating to "Limited time offer 75% discount on Speeder Pro". This utilizes False Urgency and Greed (Bait) tactics.
+· Language & Social Engineering: The payload uses German text ("Zeitlich begrenztes Angebot 75% Rabatt auf Speeder Pro"), translating to "Limited time offer 75% discount on Speeder Pro". 
+
+This utilizes False Urgency and Greed (Bait) tactics.
 
 ---
 
 *· Evasion Techniques:*
 
-  · Wildcard DNS & Randomized Subdomains: The attacker uses multiple randomized subdomains (e.g., *oppvfoab.172-202-98-170.cloud-xip.com*, *kjujzwne...*) pointing to the same IP to bypass URL blocklists. The first link uses the raw IP as a subdomain (172-202-98-170...) as a fallback.
+  · Wildcard DNS & Randomized Subdomains: The attacker uses multiple randomized subdomains (e.g., *oppvfoab.172-202-98-170.cloud-xip.com*, *kjujzwne...*) pointing to the same IP to bypass URL blocklists. 
+
+The first link uses the raw IP as a subdomain (172-202-98-170...) as a fallback.
 
   · Trust Abuse (Imgur): Malicious payload images are hosted on *i.imgur.com* to bypass image security filters.
 
 *· Tracking & Analytics Mechanism:*
 
-  · Silent Alarm (Tracking Pixel): A hidden 1x1 pixel image (<img src="http://uicavxea.../track/..." width="1px" height="1px" style="visibility:hidden">) is embedded. It acts as an open-tracker, reporting the victim's IP address, device type, and the exact time the email was opened back to the attacker.
+  · Silent Alarm (Tracking Pixel): A hidden 1x1 pixel image (<img src="http://uicavxea.../track/..." width="1px" height="1px" style="visibility:hidden">) is embedded. 
+  
+It acts as an open-tracker, reporting the victim's IP address, device type, and the exact time the email was opened back to the attacker.
 
   · A/B Testing: The separate text and image hyperlinks allow the attacker to track which specific element the victim interacted with.
 
@@ -97,7 +109,9 @@ This is a list of "evidence" that must be blocked by the IT/Network team:
 **6. Evidence / Appendices**
 
 A. Email Header Analysis (SPF Pass but Domain Mismatch)
-Description: Shows SPF pass, but reveals the mismatch between the sender domain (naturespaints.com) and the DKIM domain (aeronovahq.co.uk). Also highlights the Sender: header which exposes the true relay address.
+Description: Shows SPF pass, but reveals the mismatch between the sender domain (naturespaints.com) and the DKIM domain (aeronovahq.co.uk). 
+
+Also highlights the Sender: header which exposes the true relay address.
 ![Header Analysis](./evidence/sample-0/header-analysis.png)
 
 B. Raw HTML Payload (7bit Encoding - Multiple Randomized URLs & Tracking Pixel)
@@ -108,6 +122,8 @@ Description: Highlights the German bait text, the three distinct randomized subd
 
  Final Conclusion
 
-This email is confirmed as Phishing with a High severity level. While the previous sample used brute-force VPS tactics, this campaign demonstrates advanced technical evasion. The attacker utilizes domain reputation abuse, wildcard DNS, randomized URLs, and tracking pixels to ensure high deliverability and monitor click-through rates.
+This email is confirmed as Phishing with a High severity level. While the previous sample used brute-force VPS tactics, this campaign demonstrates advanced technical evasion. 
+
+The attacker utilizes domain reputation abuse, wildcard DNS, randomized URLs, and tracking pixels to ensure high deliverability and monitor click-through rates.
 
 ---
