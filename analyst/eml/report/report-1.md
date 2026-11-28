@@ -88,6 +88,11 @@ Malicious URL: The "Resgatar Agora" (Redeem Now) button is hardcoded to redirect
 Threat Intel Correlation: The link is currently marked as (inactive/offline). This explains why automated tools like VirusTotal returned 0 detections—the phishing infrastructure has likely been taken down or moved. This highlights the importance of manual header/payload analysis over relying solely on automated scanners.
 ![Payload decoded](./evidence/sample-1/payload-decoded.png)
 
+**C. Raw HTML Source Code (Payload Analysis)**
+
+The raw HTML payload showing the structure of the fake newsletter and the embedded hyperlink. ![Click here to view the Raw HTML Payload (Sanitized)](./evidence/sample-1/source-code/email-payload.html.txt)
+
+
 ---
 
 ## 🏁 Final Conclusion
