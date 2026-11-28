@@ -96,6 +96,10 @@ Shows SPF pass, but reveals the mismatch between the sender domain (naturespaint
 Highlights the German bait text, the three distinct randomized subdomains pointing to the same IP, and the hidden 1x1 tracking pixel at the bottom.
 ![Payload decoded](./evidence/sample-0/payload-decoded.png)
 
+**C. Raw HTML Source Code (Payload Analysis)**
+
+The raw HTML payload showing the structure of the fake newsletter and the embedded hyperlink. ![Click here to view the Raw HTML Payload (Sanitized)](./evidence/sample-0/source-code/email-payload.html.txt)
+
 ---
 
 ## 🏁 Final Conclusion
